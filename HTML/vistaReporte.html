@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/vistaReporte.css">
+
+</head>
+    <header class="headerReporte">
+        <figure class= "ordenReporte__contenedor-punta">
+            <img class="ordenReporte__estilo-imagen" src="../IMG/reporte.png"  alt="Reporte">
+            <figcaption class ="ordenReporte__texto-ordenReporte"> REPORTE</figcaption>
+        </figure>
+        <a href="../HTML/Index.html"><button class="ordenReporte__boton-salir"> SALIR</button></a>
+       
+    </header>
+    <form class="reporteFormularios">
+        <label class="reporteBuscar">
+            <figure>
+                <img class= "reporteFormularios__img"src="../IMG/buscar.png">
+            </figure>
+            <span class="reporteFormularios__texto">Fecha inicial:</span>
+            <input class="reporteFormularios__fi"type="datetime-local">
+            <span class="reporteFormularios__texto">Fecha final:</span>
+            <input class="reporteFormularios__ff" type="datetime-local">
+            <input class="reporteFormularios__boton"type="submit"value="BUSCAR">
+        </label>
+        <label class="reporteVer">
+            <figure>
+                <img class= "reporteFormularios__img" src="../img/ojo.png">
+            </figure>
+            <span class="reporteFormularios__texto">Fecha inicial:</span>
+            <input class="reporteFormularios__fi" type="datetime-local">
+            <span class="reporteFormularios__texto">Fecha final:</span>
+            <input class="reporteFormularios__ff" type="datetime-local">
+        </label>
+        <label class="reporteGenerar">
+            <figure>
+                <img class= "reporteFormularios__img" src="../IMG/Generar.png">
+            </figure>
+            <span class="reporteFormularios__texto">Fecha inicial:</span>
+            <input class="reporteFormularios__fi" type="datetime-local">
+            <span class="reporteFormularios__texto">Fecha final:</span>
+            <input class="reporteFormularios__ff" type="datetime-local">
+            <section class="sec-generarReporte">
+                <div class="generarReporte__cont-principal">
+                    <h5>¿Desea generar este reporte?</h5>
+                        <div>SI</div>
+                        <div>NO</div>
+                </div>
+            </section>
+        </label>
+        <label class="reporteGuardar">
+            <figure>
+                <img class= "reporteFormularios__img" src="../IMG/Guardar.png">
+            </figure>
+            <span class="reporteFormularios__texto">Fecha inicial:</span>
+            <input class="reporteFormularios__fi" type="datetime-local">
+            <span class="reporteFormularios__texto">Fecha final:</span>
+            <input class="reporteFormularios__ff"type="datetime-local">
+        </label>
+        <label class="reporteImprimir">
+            <figure>
+                <img class= "reporteFormularios__img" src="../IMG/impresora.png">
+            </figure>
+            <span class="reporteFormularios__texto">Fecha inicial:</span>
+            <input class="reporteFormularios__fi" type="datetime-local">
+            <span class="reporteFormularios__texto">Fecha final:</span>
+            <input class="reporteFormularios__ff" type="datetime-local">
+            <input class="reporteFormularios__boton" type="submit" value="IMPRIMIR">
+        </label>
+    </form>
+</body>
+</html>

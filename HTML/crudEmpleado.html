@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/crudEmpleado.css">
+</head>
+<body>
+
+    <header>
+        <figure class= "header__contenedorEmpleado">
+            <img class="header__estiloEmpleado" src="../IMG/grupo.png"  alt=" "> 
+            <figcaption class ="header__texto-empleados"> EMPLEADOS</figcaption>
+        </figure>
+        <button class="header__botonsalirEmpleado" type="submit"> SALIR</button>
+    </header>
+    <!--Contenedor CRUD Productos-->
+    <section class="empleadoProductos">
+        <section class="empleadoProductos__cont-productos">
+                <section class="cont-productos__productos">PRODUCTOS
+                </section>
+
+                <section class="cont-productos__crud">
+                    <figure>
+                        <img class="estiloEliminarProductoEm" src="../img/contenedor-de-basura.png"  alt="img eliminar"> 
+                        <figcaption>Eliminar</figcaption>
+                    </figure>
+    <!--Debo cambiar div por section y cambiar nombre de cada clase. centrar imagenes en css-->
+                    <figure>
+                        <img class="estiloBuscarProductoEm" src="../img/buscar.png"  alt="img buscar"> 
+                        <figcaption>Buscar</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img class="estiloVerProductoEm" src="../img/ojo.png"  alt="img ver"> 
+                        <figcaption>Ver</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img class="estiloEditarProductoEm" src="../IMG/editar.png"  alt=" "> 
+                        <figcaption>Editar</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="estiloAgregarProductoEm" src="../img/addCar.png"  alt=" "> 
+                        <figcaption>Agregar</figcaption>
+                    </figure>
+                </section>
+        </section>
+    </section>
+<!--Contenedor CRUD Ventas-->
+    <section class="empleadoVentas">
+        <section class="empleadoVentas__cont-ventas">
+                <section class="cont-ventas__ventas">VENTAS
+                </section>
+                
+                <section class="cont-ventas__crud">
+                    <figure>
+                        <img class="estiloAgregarVentaEm" src="../IMG/AgregarNar.png"  alt=" "> 
+                        <figcaption>Agregar</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="estiloBuscarVentaEm" src="../IMG/buscar.png"  alt=" "> 
+                        <figcaption>Buscar</figcaption>
+                    </figure>
+                </section>
+        </section>
+    </section>
+    <!--Contenedor para abrir y cerrar caja-->
+    <section class="botonesCaja">
+        <button> CLICK AQUÍ PARA APERTURA DE CAJA
+        </button>
+        <button> CLICK AQUÍ PARA CIERRE DE CAJA
+        </button>
+    </section>
+</body>
+</html>
