@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- esto es un archivo html-->
+<html lang="en"> <!-- tipo de idioma escrito-->
+    <head> <!-- etiquetas de escritura-->
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>THE BEST TEAM</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/ordenCompraAdministrador.css">
+    </head>
+
+    <body>
+        <header class="headerOrdenCompraA">
+            <figure class= "ordenCompra__contenedor-puntaA">
+                <img class="ordenCompra__estilo-imagenA" src="../img/orden-procesada.png"  alt=" pick admi"> 
+                <figcaption class ="ordenCompra__texto-ordenCompraA"> ORDEN DE COMPRA</figcaption>
+            </figure>
+            <button class="ordenCompra__boton-salirA" type="submit"> SALIR</button>
+        </header>
+
+        <form id="formu-datosventaA">
+                <label id="igualAdmi" for="productCode">
+                    <span>CÓDIGO</span>
+                    <input id="insertCodeOrder__inputA" type="text"  required/>
+                </label>
+    
+            <label  id="igualAdmi">
+                <span>PRODUCTO</span>
+                <input id="insertproductName__inputA" type="text"  required/>
+            </label>
+
+            <label id="igualAdmi">
+                <span>VALOR UNITARIO</span>
+                <input id="insertvalueUniOrder__inputA" type="text"  required/>
+            </label>
+
+            <label id="igualAdmi">
+                <span>CANTIDAD</span>
+                <input id="insertvaluecantiOrder__inputA" type="text"   required/>
+
+            </label>
+    
+            <label id="igualAdmi">
+                <span>VALOR PARCIAL</span>
+                <input id="insertPartialvalueOrder__inputA" type="text"   required/>
+            </label>
+
+            <label id="igualAdmi">
+                <span>FECHA VENTA</span>
+                <input id="insertdateOrder__inputA" type="datetime-local"  required/>
+            </label>
+        </form>
+        
+            <button class="insertTotalvalueOrder__buttonA" onclick="adherirAdmin()"> AGREGAR OTRO PRODUCTO</button>
+
+        <footer class="contenidoInferiorOrdenCompraA">
+            <figure class="contFiguraOrdenCompraA">
+                <img class="contFiguraOrdenCompra__imgA" src="../img/editar.png" alt="editar">
+                <img class="contFiguraOrdenCompra__imgDelete" src="../img/contenedor-de-basura.png"  alt="img eliminar">
+                <img class="contFiguraOrdenCompra__imgA" src="../img/buscar.png" alt="buscar">
+            </figure>
+
+                <label class="insertTotalvalueOrderAdmin">
+                    <span>VALOR TOTAL</span>
+                    <input class="insertTotalvalueOrder__inputA" type="text"  id="productCode" required/>
+                    <input class="TotalvalueOrder__buttonA" type="submit" value="AGREGAR VENTA">
+                </label>    
+        </footer>
+        <script src="../JS/addNewRowAdmi.js"> </script>
+    </body>
