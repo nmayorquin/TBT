@@ -6,7 +6,7 @@ const firebaseConfig = {
     apiKey: "AIzaSyD_MxoYRGF5JBHU9sGdhcpjvN4313kHXvI",
     authDomain: "bestteam-a5bbb.firebaseapp.com",
     projectId: "bestteam-a5bbb",
-    storageBucket: "bestteam-a5bbb.appspot.com",
+    storageBucket: "gs://bestteam-a5bbb.appspot.com",
     messagingSenderId: "273282269182",
     appId: "1:273282269182:web:231adf58f23fd1e2038aaf"
 };
@@ -17,3 +17,5 @@ firebase.initializeApp(firebaseConfig);
 
 // Initialize Cloud Firestore and get a reference to the service
 const db = firebase.firestore();
+
+ 
