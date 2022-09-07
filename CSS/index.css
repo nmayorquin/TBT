@@ -140,6 +140,8 @@ body{
     padding: 10%;
     font-family: inherit; /*HERENCIA*/
     font-size:medium;
+    position: relative;
+    
 }
 
 
