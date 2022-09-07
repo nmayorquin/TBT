@@ -17,8 +17,8 @@
 <!--SECCIÓN SUPERIOR: USUARIO-->
                 <form class="header" action="">
                     <label class="ingreso-usuario" for="ingreso-usuario">
-                        <span>USUARIO</span>
-                        <input type="text" class="ingreso-usuario__input" id="ingreso-usuario" autocomplete="username" required/>
+                        <span>E- MAIL</span>
+                        <input type="email" class="ingreso-usuario__input" id="ingreso-usuarioEmail" autocomplete="username" required/>
                     </label>
                 
     <!--SECCIÓN SUPERIOR: CONTRASEÑA-->
@@ -30,7 +30,7 @@
     <!--SECCIÓN SUPERIOR: ROL-->
                 <label class="ingreso-rol" for="roles">
                     <span>ROL</span>
-                    <input class="ingreso-rol__input" list="roles">
+                    <input class="ingreso-rol__input" list="roles" required>
                     <datalist id="roles">       
                         <option value="ADMINISTRADOR"></option>
                         <option value="EMPLEADO"></option>
@@ -77,17 +77,17 @@
                 <!-- registrarse-->
          <!-- FORMULARIO REGISTRO DE PERSONAS-->
                     <!-- nombres-->
-                <form action="">
+                <form id="formularioInscripcion" action="">
                     <h4 class="seccion-regis__texto-registro"> REGISTRARSE</h4>
                     <label  for="nombre_usuario">
-                        <span>NOMBRE(S)</span>
-                        <input type="text" name="nombre_usuario" id="nombre_usuario" autocomplete="name" required/> 
+                        <span>NOMBRE(S) Y APELLIDO(S)</span>
+                        <input type="text" name="nombre-apellido_usuario" id="nombre-apellido_usuario" autocomplete="name" required/> 
                     </label>
 
-                    <!-- apellido-->
-                    <label for="apellido_usuario">
-                        <span>APELLIDO(S)</span>
-                        <input type="text" name="apellido_usuario" id="apellido_usuario" required> 
+                    <!-- email-->
+                    <label for="email_usuario">
+                        <span>E- MAIL</span>
+                        <input type="email" name="email_usuario" id="email_usuario" required> 
                     </label>
 
                     <!-- identificación-->
@@ -117,9 +117,10 @@
                             <option id="empl" value="EMPLEADO"></option>
                         </datalist>
                      </label>
+                     <input class="boton-registro" type="submit" value="REGISTRARSE" onclick="guardar()"> 
                 </form>
                 <!--SECCIÓN SUPERIOR: BOTON REGISTRAR -->
-                <input class="boton-registro" type="submit" value="REGISTRARSE" onclick="guardar()"> 
+               
             </section>
 
                 <!--CALCULADORA-->
@@ -155,16 +156,20 @@
             </div>    
         </main>
 
+
     </body>
-<!--IMPORTACIÓN DE FIREBASE-->
+<!--IMPORTACIÓN DE FIREBASE son los sdk-->
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> <!--trae el servicio de autenticación-->
 
-<!--IMPORTACIÓN DE ARCHIVOS JAVASCRIPT-->
-    <script src="../JS/configuracion.js"></script>
-    <script src="../JS/guardar.js"></script>
-    <script src="../JS/Index.js" > </script>
-    <script src="../JS/Calculadora.js"></script>
-    <script src="../JS/Display.js"> </script>
+        <!--IMPORTACIÓN DE ARCHIVOS JAVASCRIPT-->
+        <script src="../JS/configuracion.js"></script>
+        <script src="../JS/guardar.js"></script>
+        <script src="../JS/Index.js" > </script>
+        <script src="../JS/Calculadora.js"></script>
+        <script src="../JS/Display.js"> </script>
+       
+      
 </html>
