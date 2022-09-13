@@ -15,16 +15,16 @@
 <!--  SECCIÓN SUPERIOR: USUARIO - CONTRASEÑA - ROL BOTON INGRESAR-->
         <header>      
 <!--SECCIÓN SUPERIOR: USUARIO-->
-                <form class="header" action="">
+                <form id="ingreso-plataforma" class="header" action="">
                     <label class="ingreso-usuario" for="ingreso-usuario">
                         <span>E- MAIL</span>
-                        <input type="email" class="ingreso-usuario__input" id="ingreso-usuarioEmail" autocomplete="username" required/>
+                        <input id="ingreso-plataforma__email" type="email" class="ingreso-usuario__input" id="ingreso-usuarioEmail" autocomplete="username" required/>
                     </label>
                 
     <!--SECCIÓN SUPERIOR: CONTRASEÑA-->
                 <label  class="ingreso-contra" for="ingreso-pass" >
                     <span>CONTRASEÑA</span>
-                    <input type="password" class="ingreso-contra__input" id="ingreso-pass" autocomplete="new-password" required/> 
+                    <input id="ingreso-plataforma__pass" type="password" class="ingreso-contra__input" id="ingreso-pass" autocomplete="new-password" required/> 
                 </label>
 
     <!--SECCIÓN SUPERIOR: ROL-->
@@ -36,8 +36,7 @@
                         <option value="EMPLEADO"></option>
                     </datalist>
                  </label>
-                 <a class="header__boton-ingresar" href="../HTML/crudAdministrador.html">INGRESAR
-                </a>
+                 <a target="_blank" class="header__boton-ingresar" href="../HTML/crudAdministrador.html">INGRESAR</a>
     <!--SECCIÓN SUPERIOR: BOTON INGRESAR-->
                 </form>
 
@@ -117,7 +116,7 @@
                             <option id="empl" value="EMPLEADO"></option>
                         </datalist>
                      </label>
-                     <input class="boton-registro" type="submit" value="REGISTRARSE" onclick="guardar()"> 
+                     <input class="boton-registro" type="submit" value="REGISTRARSE" > 
                 </form>
                 <!--SECCIÓN SUPERIOR: BOTON REGISTRAR -->
                
@@ -163,6 +162,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> <!--trae el servicio de autenticación-->
+    
+
 
         <!--IMPORTACIÓN DE ARCHIVOS JAVASCRIPT-->
         <script src="../JS/configuracion.js"></script>
