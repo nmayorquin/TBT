@@ -63,8 +63,15 @@
                 <label class="insertTotalvalueOrder">
                     <span>VALOR TOTAL</span>
                     <input class="insertTotalvalueOrder__input" type="text"  id="productCode" required/>
-                    <input class="TotalvalueOrder__button" type="submit" value="AGREGAR VENTA">
+                    <input class="TotalvalueOrder__button" onclick="guardarOrdenCompraEmpl()" type="submit" value="AGREGAR VENTA">
                 </label>    
         </footer>
         <script src="../JS/addNewRow.js"> </script>
     </body>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="/js/configurarOrdenCompraEmpl.js"></script>
+    <script src="/js/guardarOrdenCompraEmpl.js"></script>
+
+</html>
