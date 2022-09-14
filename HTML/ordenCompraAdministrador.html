@@ -4,7 +4,7 @@
         <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>THE BEST TEAM</title>
+        <title>ORDEN DE COMPRA ADMINISTRADOR</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
@@ -13,11 +13,15 @@
 
     <body>
         <header class="headerOrdenCompraA">
-            <figure class= "ordenCompra__contenedor-puntaA">
-                <img class="ordenCompra__estilo-imagenA" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/orden-procesada.png?alt=media&token=09b37fe9-9cb7-4604-8a43-e75c43bb406f"  alt=" pick admi"> 
-                <figcaption class ="ordenCompra__texto-ordenCompraA"> ORDEN DE COMPRA</figcaption>
-            </figure>
-            <button class="ordenCompra__boton-salirA" type="submit"> SALIR</button>
+            <a href="../HTML/crudAdministrador.html">
+                <figure class= "ordenCompra__contenedor-puntaA">
+                    <img class="ordenCompra__estilo-imagenA" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/orden-procesada.png?alt=media&token=09b37fe9-9cb7-4604-8a43-e75c43bb406f"  alt=" pick admi"> 
+                    <figcaption class ="ordenCompra__texto-ordenCompraA"> ORDEN DE COMPRA</figcaption>
+                </figure>
+
+            </a>
+            
+            <a id="salirPlataforma" class="ordenCompra__boton-salirA" href="../HTML/Index.html"> SALIR</a>
         </header>
 
         <form id="formu-datosventaA">
@@ -68,11 +72,23 @@
                     <input class="TotalvalueOrder__buttonA" onclick="guardarAdmin()" type="submit" value="AGREGAR VENTA">
                 </label>    
         </footer>
+
+<!--IMPORTACIÓN DE FIREBASE son los sdk-->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> <!--trae el servicio de autenticación-->
+
+
+    <!--IMPORTACIÓN DE ARCHIVOS JAVASCRIPT-->
+   
         <script src="../JS/addNewRowAdmi.js"> </script>
+        <script src="../JS/configuracion.js"></script>
+        <script src="../JS/guardarAdmin.js"></script>
+        <script src="../JS/exit.js"></script>
+
     </body>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-    <script src="/js/configuracionAdmin.js"></script>
-    <script src="/js/guardarAdmin.js"></script>
+
+    
+
 </html>

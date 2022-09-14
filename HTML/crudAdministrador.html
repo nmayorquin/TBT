@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ADMINISTRADOR</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
@@ -21,15 +21,15 @@
         </button>
         <button class="header_botoncierre"> CLICK AQUÍ PARA CIERRE DE CAJA
         </button>
-        <button class="header__botonsalirAdministrador" type="submit"> SALIR</button>
+        <a id="salirPlataforma" class="header__botonsalirAdministrador" href="../HTML/Index.html"> SALIR</a>
     
     </header>
     <!--Contenedor CRUD VENTAS-->
+    <a href="../HTML/ordenCompraAdministrador.html" target="_blank">
     <section class="ventasAdministrador">
         <section class="ventasAdministrador__cont-ventasA">
                 <section class="cont-ventas__ventasA">VENTAS
                 </section>
-
                 <section class="cont-ventas__crud">
                    <figure>
                         <img class="estiloEliminarVentasAd" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/contenedor-de-basura.png?alt=media&token=f66bf4cc-5e7e-436d-b560-0757bd3d7e7e"  alt=" "> 
@@ -47,10 +47,11 @@
                         <img class="estiloAgregarVentasAd" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/AgegarA.png?alt=media&token=0cdd609e-a689-4d94-b95c-5c977abb9467"  alt=" "> 
                         <figcaption>Agregar</figcaption>
                     </figure>
-                    
                 </section>
         </section>
     </section>
+    </a>
+
 <!--Contenedor CRUD Productos-->
     <section class="administradorProductos">
         <section class="administradorProductos__cont-productos">
@@ -131,5 +132,16 @@
                 </section>
         </section>
     </section>
+
+    <!--IMPORTACIÓN DE FIREBASE son los sdk-->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> <!--trae el servicio de autenticación-->
+
+
+ <!--IMPORTACIÓN DE ARCHIVOS JAVASCRIPT-->
+    <script src="../JS/configuracion.js"></script>
+    <script src="../JS/exit.js"></script>
 </body>
 </html>

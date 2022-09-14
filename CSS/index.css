@@ -27,6 +27,7 @@ body{
 .ingreso-usuario, .ingreso-contra, .ingreso-rol span{
     font-family: inherit; /*HERENCIA*/
     font-size: small;
+   
 }
 
 /*CARACTERÍSTICAS DEL CONTENEDOR DE INGRESO DE INFORMACIÓN*/
@@ -42,6 +43,8 @@ body{
 .header__boton-ingresar{
     font-family: inherit; /*HERENCIA*/
     font-size: small;
+    text-decoration: none; /*quitar el subrayado del ancor*/
+
 }
 
 /* ESTILOS PARA LAS IMÁGENES PARTE SUPERIOR IZQUIERDA DE LA PANTALLA*/
