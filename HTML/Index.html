@@ -4,7 +4,7 @@
         <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>THE BEST TEAM</title>
+        <title>HOME</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
@@ -36,8 +36,9 @@
                         <option value="EMPLEADO"></option>
                     </datalist>
                  </label>
-                 <a target="_blank" class="header__boton-ingresar" href="../HTML/crudAdministrador.html">INGRESAR</a>
-    <!--SECCIÓN SUPERIOR: BOTON INGRESAR-->
+        <!--SECCIÓN SUPERIOR: BOTON INGRESAR-->
+                 <button type="submit" class="header__boton-ingresar">INGRESAR</button>
+
                 </form>
 
         </header>
@@ -116,7 +117,7 @@
                             <option id="empl" value="EMPLEADO"></option>
                         </datalist>
                      </label>
-                     <input class="boton-registro" type="submit" value="REGISTRARSE" > 
+                     <button class="boton-registro" type="submit">REGISTRARSE </button>
                 </form>
                 <!--SECCIÓN SUPERIOR: BOTON REGISTRAR -->
                
@@ -154,23 +155,24 @@
 
             </div>    
         </main>
+<!--IMPORTACIÓN DE FIREBASE son los sdk-->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> <!--trae el servicio de autenticación-->
 
+
+
+    <!--IMPORTACIÓN DE ARCHIVOS JAVASCRIPT-->
+    <script src="../JS/configuracion.js"></script>
+    <script src="../JS/guardar.js"></script>
+    <script src="../JS/Index.js" > </script>
+    <script src="../JS/Calculadora.js"></script>
+    <script src="../JS/Display.js"> </script>
+    <script src="../JS/autenticacion.js"></script>
 
     </body>
-<!--IMPORTACIÓN DE FIREBASE son los sdk-->
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> <!--trae el servicio de autenticación-->
-    
 
-
-        <!--IMPORTACIÓN DE ARCHIVOS JAVASCRIPT-->
-        <script src="../JS/configuracion.js"></script>
-        <script src="../JS/guardar.js"></script>
-        <script src="../JS/Index.js" > </script>
-        <script src="../JS/Calculadora.js"></script>
-        <script src="../JS/Display.js"> </script>
        
       
 </html>

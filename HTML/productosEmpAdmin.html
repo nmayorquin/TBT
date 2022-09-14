@@ -4,7 +4,7 @@
         <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>THE BEST TEAM</title>
+        <title>PRODUCTOS</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
@@ -13,11 +13,14 @@
 
     <body>
         <header>
+            <a href="../HTML/crudAdministrador.html">
             <figure class= "header__contenedor-punta">
                 <img class="header__estilo-imagen" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/papeleria.png?alt=media&token=629da6e2-eaf0-4744-bc2f-f5dd32a6810f"  alt="inventario pick"> 
                 <figcaption class ="header__texto-productos"> PRODUCTOS</figcaption>
             </figure>
-            <button class="header__boton-salir" type="submit"> SALIR</button>
+            </a>
+           
+            <a id="salirPlataforma" class="header__boton-salir" href="../HTML/Index.html"> SALIR</a>
         </header>
 
 
@@ -90,7 +93,7 @@
             </section>
             <!--CONTENEDOR DE GUARDAR PRODUCTOS EN SISTEMA-->
             <div class="guardarProducto__cont-principal">
-                    <button id="guardarProducto__eventoBotonUno">GUARDAR PRODUCTO</button>
+                    <button id="guardarProducto__eventoBotonUno" onclick="guardarProduct()">GUARDAR PRODUCTO</button>
             </div>
             <!--CONTENEDOR PARA GUARDAR UNA IMAGEN EN ESE ESPACIO POR PARTE DEL CLIENTE-->
             <section id="seccionImagen">
@@ -112,13 +115,17 @@
             </section>   
     </body>
 
-    <!--IMPORTACIÓN DE FIREBASE-->
+    <!--IMPORTACIÓN DE FIREBASE son los sdk-->
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> <!--trae el servicio de autenticación-->
+    
+    
 
     <!--IMPORTACIÓN DE ARCHIVOS JAVASCRIPT-->
     <script src="../JS/configuracion.js"></script>
     <script src="../JS/guardarProducto.js"></script>
+    <script src="../JS/exit.js"></script>
 
 </html>

@@ -13,6 +13,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth(); //objeto creado con intención de que se use para guardar datos de autenticación
 
 
 // Initialize Cloud Firestore and get a reference to the service

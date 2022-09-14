@@ -10,7 +10,7 @@ function guardarAdmin (){
 
     })
     .then((docRef) => {
-        alert("Registro exitoso")
+        alert("Registro de venta exitosa")
     })
     .catch((error) => {
         alert("Error en el registro")
