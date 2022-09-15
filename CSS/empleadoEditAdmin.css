@@ -89,7 +89,7 @@ main{
     border: 3px solid #A2F4CD;
     border-radius: 10px;
     margin-top: 15px;
-    margin-left: 12px;
+    margin-left: -5px;
 }
 
 /* ESTILOS DE FORM 2: AGREGAR EMPLEADO */
@@ -122,7 +122,7 @@ main{
 .agregarE__imgSave{
     width: 65px;
     height: 60px;
-    margin-left: 50px;
+    margin-left: 48px;
 }
 
 /* ESTILOS DE FORM 3: EDITAR EMPLEADO */
@@ -156,7 +156,7 @@ main{
     width: 208px;
     height: 110px;
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 1px;
 }
 
 .guardarEdicion__cont-principal{
@@ -186,7 +186,7 @@ main{
 .editarE__imgSave{
     width: 65px;
     height: 60px;
-    margin-left: 85px;
+    margin-left: 75px;
 }
 
 /* ESTILOS DE FORM 4: ELIMINAR EMPLEADO */
@@ -220,7 +220,7 @@ main{
     width: 208px;
     height: 110px;
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 1px;
 }
 
 .guardarDelete__cont-principal{
@@ -250,7 +250,7 @@ main{
 .deleteE__imgSave{
     width: 65px;
     height: 60px;
-    margin-left: 85px;
+    margin-left: 75px;
 }
 
 
