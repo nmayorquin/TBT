@@ -42,7 +42,7 @@ body{
 /*CARACTERÍSTICAS DELBOTON DE INGRESO DEL HEADER*/
 .header__boton-ingresar{
     font-family: inherit; /*HERENCIA*/
-    font-size: small;
+    font-size:medium;
     text-decoration: none; /*quitar el subrayado del ancor*/
 
 }
