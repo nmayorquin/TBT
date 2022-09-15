@@ -1,3 +1,22 @@
+const database = getDatabase(); //iniciar real database para que traiga la info y hagamos crud
+
+/*VARIABLES PARA GUARDAR DATOS*/ 
+var agregarEmployee__nombre = document.getElementById("agregarE__nombre");
+var agregarEmployee__apellido = document.getElementById("agregarE__apellido");
+var agregarEmployee__id = document.getElementById("agregarE__id");
+var agregarEmployee__pass= document.getElementById("agregarE__pass");
+var agregarEmployee__Repetpass= document.getElementById("agregarE__Repetpass");
+
+/*VARIABLES PARA FUNCIONES CON BOTONES */
+
+var boton__verEmployee = document.getElementById("boton__verE");
+var boton__agregarEmployee = document.getElementById("boton__agregarE");
+var boton__updateEmployee = document.getElementById("boton__updateE");
+var boton__deleteEmployee = document.getElementById("boton__deleteE");
+
+function insertarDatos(){
+    setInterval(ref(database, ))
+}
 
 /*
 
