@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE BEST TEAM</title>
+    <title>CRUD EMPLEADOS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
@@ -20,133 +20,82 @@
     </header>
 
     <main>
-    <!-- SECCIÓN 1 VER EMPLEADO-->
-        <form class="seccionTodo__verE" action="">
-            <figure>
-                <img class="verE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/ojo.png?alt=media&token=410dd7e6-cd43-4e9a-b25b-f8a26f95cd4c" alt="">
-                </figure>
-            <label class="verE__labelEdit" for="empleado">
-                <span>EMPLEADO 1</span>
-                <input class="verE__inputEdit" type="text" name="empleado" id="empleado" autocomplete="name" required/> 
-            </label>
+            <!--SECCIÓN DE BOTONES-->
+            <section class="botonesCrud">
+            <!-- BOTON PARA SELECCIONAR-VER UN EMPLEADO-->
+                <button id="boton__verE" action="">
+                    <figure>
+                        <img class="verE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/ojo.png?alt=media&token=410dd7e6-cd43-4e9a-b25b-f8a26f95cd4c" alt="">
+                    </figure>
+                </button>
+            <!-- BOTON PARA AGREGAR UN EMPLEADO-->
+                <button id="boton__agregarE">
+                    <figure>
+                        <img class="agregarE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/AgregarE.png?alt=media&token=fc8324b4-904e-4506-938f-1a0e5d734889" alt="">
+                    </figure>
+                </button>
 
-            <label class="verE__labelEdit" for="empleado">
-                <span>EMPLEADO 2</span>
-                <input class="verE__inputEdit" type="text" name="empleado" id="empleado" required> 
-            </label>
+                <!-- BOTON PARA ACTUALIZAR-EDITAR UN EMPLEADO-->
+                <button id="boton__updateE">
+                    <figure>
+                        <img class="editarE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/editar.png?alt=media&token=4db443c1-ebf1-43cd-95d2-4982cffe85f5" alt="">
+                    </figure> 
+                </button>
 
-            <label class="verE__labelEdit"  for="empleado">
-                <span>EMPLEADO 3</span>
-                <input class="verE__inputEdit" type="text" name="empleado" id="empleado" required> 
-            </label>
-
-            <label class="verE__seccionInfo">
-
-                <input class="verE__inputInfo" type="text">
-            </label>
-        </form>
+                <!-- BOTON PARA ELIMINAR UN EMPLEADO-->
+                <button id="boton__deleteE">
+                    <figure>
+                        <img class="deleteE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/contenedor-de-basura.png?alt=media&token=f66bf4cc-5e7e-436d-b560-0757bd3d7e7e" alt="">
+                    </figure>
+                </button>
+                </section>
+              
             
-        <!-- SECCIÓN 2 AGREGAR EMPLEADO-->
+
+
         <form class="seccionTodo__agregarE" action="">
-            <figure>
-                <img class="agregarE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/AgregarE.png?alt=media&token=fc8324b4-904e-4506-938f-1a0e5d734889" alt="">
-            </figure>
             <label class="agregarE__labelEdit" for="empleado">
                 <span>NOMBRE(S)</span>
-                <input class="agregarE__inputEdit" type="text" name="empleado" id="empleado" autocomplete="name" required/> 
+                <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__nombre" autocomplete="name" required/> 
             </label>
 
             <label class="agregarE__labelEdit" for="empleado">
                 <span>APELLIDO(S)</span>
-                <input class="agregarE__inputEdit" type="text" name="empleado" id="empleado" required> 
+                <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__apellido" required> 
             </label>
 
             <label class="agregarE__labelEdit"  for="empleado">
                 <span>IDENTIFICACIÓN</span>
-                <input class="agregarE__inputEdit" type="text" name="empleado" id="empleado" required> 
+                <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__id" required> 
+            </label>
+
+            <label class="agregarE__labelEdit"  for="empleado">
+                <span>E-MAIL</span>
+                <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__id" required> 
             </label>
 
             <label class="agregarE__labelEdit"  for="empleado">
                 <span>DIGITE CONTRASEÑA</span>
-                <input class="agregarE__inputEdit" type="password" name="empleado" id="empleado" required> 
+                <input class="agregarE__inputEdit" type="password" name="empleado" id="agregarE__pass" required> 
             </label>
 
             <label class="agregarE__labelEdit"  for="empleado">
                 <span>CONFIRMAR CONTRASEÑA</span>
-                <input class="agregarE__inputEdit" type="password" name="empleado" id="empleado" required> 
+                <input class="agregarE__inputEdit" type="password" name="empleado" id="agregarE__Repetpass" required> 
             </label>
-            <figure>
-                <img class="agregarE__imgSave" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/salvar.png?alt=media&token=3dc86d8a-1af8-4d3b-9898-11e8d68b2102" alt="">
-            </figure>
-        </form>
-
-            <!-- SECCIÓN 3 EDITAR EMPLEADO-->
-        <form class="seccionTodo__editarE" action="">
-            <figure>
-                <img class="editarE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/editar.png?alt=media&token=4db443c1-ebf1-43cd-95d2-4982cffe85f5" alt="">
-            </figure>
-            <label class="editarE__labelEdit" for="empleado">
-                <span>NOMBRE(S)</span>
-                <input class="editarE__inputEdit" type="text" name="empleado" id="empleado" autocomplete="name" required/> 
-            </label>
-
-            <label class="editarE__labelEdit" for="empleado">
-                <span>APELLIDO(S)</span>
-                <input class="editarE__inputEdit" type="text" name="empleado" id="empleado" required> 
-            </label>
-
-            <label class="editarE__labelEdit"  for="empleado">
-                <span>IDENTIFICACIÓN</span>
-                <input class="agregarE__inputEdit" type="text" name="empleado" id="empleado" required> 
-            </label>
-
-            <label class="editarE__labelEdit"  for="empleado">
-                <span>CONTRASEÑA</span>
-                <input class="agregarE__inputEdit" type="password" name="empleado" id="empleado" required> 
-            </label>
-            <section class="sec-guardarEdicion">
-                <div class="guardarEdicion__cont-principal">
-                    <h5>¿Guardar cambios?</h5>
-                        <div>SI</div>
-                        <div>NO</div>
-                </div>
-            </section>
-            <figure>
-                <img class="editarE__imgSave" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/salvar.png?alt=media&token=3dc86d8a-1af8-4d3b-9898-11e8d68b2102" alt="">
-            </figure>
-        </form>
-
-            <!-- SECCIÓN 4 ELIMINAR EMPLEADO-->
-        <form class="seccionTodo__deleteE" action="">
-            <figure>
-                <img class="deleteE__imgEdit" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/contenedor-de-basura.png?alt=media&token=f66bf4cc-5e7e-436d-b560-0757bd3d7e7e" alt="">
-            </figure>
-            <label class="deleteE__labelEdit" for="empleado">
-                <span>EMPLEADO 1</span>
-                <input class="deleteE__inputEdit" type="text" name="empleado" id="empleado" autocomplete="name" required/> 
-            </label>
-
-            <label class="deleteE__labelEdit" for="empleado">
-                <span>EMPLEADO 2</span>
-                <input class="deleteE__inputEdit" type="text" name="empleado" id="empleado" required> 
-            </label>
-
-            <label class="deleteE__labelEdit"  for="empleado">
-                <span>EMPLEADO 3</span>
-                <input class="deleteE__inputEdit" type="text" name="empleado" id="empleado" required> 
-            </label>
-
-            <section class="sec-guardarDelete">
-                <div class="guardarDelete__cont-principal">
-                    <h5>¿Está seguro de eliminar este empleado?</h5>
-                        <div>SI</div>
-                        <div>NO</div>
-                </div>
-            </section>
-            <figure>
-                <img class="deleteE__imgSave" src="https://firebasestorage.googleapis.com/v0/b/bestteam-a5bbb.appspot.com/o/salvar.png?alt=media&token=3dc86d8a-1af8-4d3b-9898-11e8d68b2102" alt="">
-            </figure>
         </form>
     </main>
+
+<!--IMPORTACIÓN DE FIREBASE son los sdk-->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> <!--trae el servicio de autenticación-->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+
+    <!--IMPORTACIÓN DE ARCHIVOS JAVASCRIPT-->
+    <script src="../JS/configuracion.js"></script>
+    <script src="../JS/guardar.js"></script>
 </body>
 </html>
