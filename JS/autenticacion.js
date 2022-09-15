@@ -15,6 +15,7 @@
         .then(userCredential => {
 
             alert("Su registro ha sido guardado con éxito"); //si este mensaje se muestra, significa que se ejecutó el método
+        
         })
     });
 
