@@ -19,4 +19,4 @@ const auth = firebase.auth(); //objeto creado con intención de que se use para 
 // Initialize Cloud Firestore and get a reference to the service
 const db = firebase.firestore();
 
- 
+
