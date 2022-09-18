@@ -1,22 +1,58 @@
-const database = getDatabase(); //iniciar real database para que traiga la info y hagamos crud
+const database = firebase.database().ref("empleados");
+document.getElementById("boton__agregarE").addEventListener("click", () =>{
+    var agregarEmployee__nombreYapellido = document.getElementById("agregarE__nombre").value;
+    var agregarEmployee__id = document.getElementById("agregarE__id").value;
+    var agregarEmployee__correo = document.getElementById("agregarE__email").value;
+    var agregarEmployee__pass = document.getElementById("agregarE__pass").value;
+    var agregarEmployee__Repetpass= document.getElementById("agregarE__Repetpass").value;
+});
 
-/*VARIABLES PARA GUARDAR DATOS*/ 
-var agregarEmployee__nombre = document.getElementById("agregarE__nombre");
-var agregarEmployee__apellido = document.getElementById("agregarE__apellido");
-var agregarEmployee__id = document.getElementById("agregarE__id");
-var agregarEmployee__pass= document.getElementById("agregarE__pass");
-var agregarEmployee__Repetpass= document.getElementById("agregarE__Repetpass");
+/*
 
-/*VARIABLES PARA FUNCIONES CON BOTONES */
+
+
+
+/*
+/*VARIABLES PARA GUARDAR DATOS
+    var agregarEmployee__nombreYapellido = document.getElementById("agregarE__nombre");
+    var agregarEmployee__id = document.getElementById("agregarE__id");
+    var agregarEmployee__correo = document.getElementById("agregarE__email");
+    var agregarEmployee__pass = document.getElementById("agregarE__pass");
+    var agregarEmployee__Repetpass= document.getElementById("agregarE__Repetpass");
+*/ 
+
+/*VARIABLES PARA FUNCIONES CON BOTONES 
 
 var boton__verEmployee = document.getElementById("boton__verE");
 var boton__agregarEmployee = document.getElementById("boton__agregarE");
 var boton__updateEmployee = document.getElementById("boton__updateE");
-var boton__deleteEmployee = document.getElementById("boton__deleteE");
+var boton__deleteEmployee = document.getElementById("boton__deleteE");*/
 
+
+/*con esta función se ingresan los datos a firebase
 function insertarDatos(){
-    setInterval(ref(database, ))
-}
+    setInterval(ref(database, "empleados/"+ agregarEmployee__id.value), {
+        nombreYapellidoEmpleado: agregarEmployee__nombreYapellido.value,
+        identificacion: agregarEmployee__id.value,
+        correo: agregarEmployee__correo.value,
+        password: agregarEmployee__pass.value,
+        repetPass: agregarEmployee__Repetpass.value  
+    })
+    .then((docRef) => {
+        alert("Su registro fue exitoso");
+    })
+    .catch((error) => {
+        alert("error en el registro"+error);
+    });
+}*/ 
+
+/*darle funcionalidad al boton insertar datos 
+    boton__agregarEmployee.addEventListener("click", insertarDatos);*/
+
+
+
+
+
 
 /*
 

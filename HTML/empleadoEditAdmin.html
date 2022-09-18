@@ -57,23 +57,17 @@
 
         <form class="seccionTodo__agregarE" action="">
             <label class="agregarE__labelEdit" for="empleado">
-                <span>NOMBRE(S)</span>
+                <span>NOMBRE(S) Y APELLIDO(S)</span>
                 <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__nombre" autocomplete="name" required/> 
             </label>
-
-            <label class="agregarE__labelEdit" for="empleado">
-                <span>APELLIDO(S)</span>
-                <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__apellido" required> 
-            </label>
-
             <label class="agregarE__labelEdit"  for="empleado">
                 <span>IDENTIFICACIÓN</span>
-                <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__id" required> 
+                <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__id"   required> 
             </label>
 
             <label class="agregarE__labelEdit"  for="empleado">
                 <span>E-MAIL</span>
-                <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__id" required> 
+                <input class="agregarE__inputEdit" type="text" name="empleado" id="agregarE__email" autocomplete="email" required> 
             </label>
 
             <label class="agregarE__labelEdit"  for="empleado">
@@ -90,14 +84,13 @@
 
 <!--IMPORTACIÓN DE FIREBASE son los sdk-->
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> <!--trae el servicio de autenticación-->
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
 
 
     <!--IMPORTACIÓN DE ARCHIVOS JAVASCRIPT-->
-    <script src="../JS/configuracion.js"></script>
-    <script src="../JS/guardar.js"></script>
+    <script src="../JS/configuracionCrud.js"></script>
 </body>
 </html>
